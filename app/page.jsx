@@ -11,7 +11,7 @@ export default function Home() {
       <section className="relative">
         <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/50 z-10" />
         <Image
-          src="/images/hero.jpg"
+          src="/hero1.webp"
           alt="Fashion collection"
           width={1200}
           height={600}
@@ -66,7 +66,7 @@ export default function Home() {
             >
               <div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-colors z-10" />
               <Image
-                src={`/images/categories/${category.toLowerCase()}.jpg`}
+                src={`${category}.webp`}
                 alt={category}
                 width={600}
                 height={400}
