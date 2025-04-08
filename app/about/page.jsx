@@ -24,7 +24,7 @@ export default function AboutPage() {
               </p>
             </div>
             <div className="relative h-[400px] rounded-lg overflow-hidden">
-              <Image src="/images/about.jpg" alt="Our store" fill className="object-cover" />
+              <Image src="/about.jpg" alt="Our store" fill className="object-cover" />
             </div>
           </div>
         </section>
@@ -71,14 +71,14 @@ export default function AboutPage() {
           <h2 className="text-3xl font-bold tracking-tight mb-6">Our Team</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { name: "Hussain Ahmad", role: "Founder & CEO", image: "/images/team/hussain.jpg" },
-              { name: "Salahudin", role: "Creative Director", image: "/images/team/salahudin.jpg" },
-              { name: "Aisha Patel", role: "Head of Design", image: "/images/team/aisha.jpg" },
-              { name: "Awais", role: "Operations Manager", image: "/images/team/awais.jpg" },
+              { name: "Hussain Ahmad", role: "Founder & CEO", image: "/hussain.jpg" },
+              { name: "Salahudin", role: "Creative Director", image: "/salahudin.png" },
+              { name: "Aisha Patel", role: "Head of Design", image: "/aisha.jpg" },
+              { name: "Awais", role: "Operations Manager", image: "/awais.jpg" },
             ].map((member) => (
               <div key={member.name} className="flex flex-col items-center text-center">
                 <div className="relative w-40 h-40 rounded-full overflow-hidden mb-4">
-                  <Image src={member.image || "/placeholder.svg"} alt={member.name} fill className="object-cover" />
+                  <Image src={member.image} alt={member.name} fill className="object-cover" />
                 </div>
                 <h3 className="text-xl font-semibold">{member.name}</h3>
                 <p className="text-muted-foreground">{member.role}</p>
